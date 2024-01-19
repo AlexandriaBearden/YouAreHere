@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #95b66f;
+    background-image: url(youarehere.jpg);
+    background-size: cover;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.input label {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input select {
+    border: none;
+    border-radius: 8px;
+    min-width: 300px;
+    font-size: 16px;
+    padding: 8px 4px;
+    background-color: #D49BA7;
+    color: white;
+    text-align: center;
+}
+
+.input select:focus {
+    outline: none;
+}
+
+.circle-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.circle-outline {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 15px solid #f1f1f1;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), rgba(0,0,0,0.05);
+}
+
+.circle-progress {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #D49BA7;
+    border-radius: 50%;
+    transition: 4s ease all;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), rgba(0,0,0,0.05);
+}
+
+.circle-grow {
+    transform: scale(5.3);
+}
+
+.breaths {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.instructions {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 18px;
+    color: white;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #D49BA7;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease all;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), rgba(0,0,0,0.06);
+}
+
+button:hover {
+    background-color: white;
+    color: #D49BA7;
+}
+
